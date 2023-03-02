@@ -1,0 +1,127 @@
+.verde {
+  background-color: #19766c;
+}
+
+.fa.fa-phone {
+  content: "\f095";
+  font-size: 20px;
+  margin-right: 8px;
+  margin-top: 4px;
+  color: white;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+.start {
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+
+.icon-text {
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+}
+
+.nav_link {
+  color: #19766c !important;
+}
+.nav-link:hover {
+  color: rgb(134, 188, 112) !important;
+
+  padding-bottom: 0%;
+  border-bottom: dotted;
+  -webkit-transition: all 0.5s !important;
+  -moz-transition: all 0.5s !important;
+  -o-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+}
+.dropdown-menu {
+  @media (min-width: 200px) and (max-width: 600px) {
+    width: 100%;
+  }
+  @media (min-width: 601px) {
+    width: 521px;
+    border-top-style: solid;
+    border-color: rgb(25, 118, 108);
+    border: 5%;
+    top: 123% !important;
+    left: -270px !important;
+  }
+}
+.letra-verde {
+  color: #19766c !important;
+}
+.social-networks {
+  display: flex;
+  justify-content: end;
+  a {
+    text-decoration: none;
+    .fa-facebook {
+      color: #19766c;
+      padding: 14px;
+      padding-left: 4px;
+      width: 30px;
+      height: 30px;
+
+      border: 0.09rem solid;
+      border-radius: 100%;
+      -webkit-transition: all 0.5s !important;
+      -moz-transition: all 0.5s !important;
+      -o-transition: all 0.5s !important;
+      transition: all 0.5s !important;
+    }
+    .fa-facebook:hover {
+      color: white;
+      background-color: rgb(199, 214, 133);
+      padding: 2px;
+      padding-left: 6px;
+      padding-right: 6px;
+      border: 0.09rem solid;
+      border-radius: 50%;
+    }
+
+    .fa-instagram {
+      color: #19766c;
+      padding: 14px;
+      padding-left: 4px;
+      width: 30px;
+      height: 30px;
+
+      border: 0.09rem solid;
+      border-radius: 100%;
+      -webkit-transition: all 0.5s !important;
+      -moz-transition: all 0.5s !important;
+      -o-transition: all 0.5s !important;
+      transition: all 0.5s !important;
+
+      .fa-instagram:hover {
+        color: white;
+        background-color: rgb(199, 214, 133);
+        padding: 3px;
+        border: 0.09rem solid;
+        border-radius: 50%;
+      }
+    }
+    .fa-youtube {
+      color: #19766c;
+      padding: 14px;
+      padding-left: 4px;
+      width: 30px;
+      height: 30px;
+
+      border: 0.09rem solid;
+      border-radius: 100%;
+      -webkit-transition: all 0.5s !important;
+      -moz-transition: all 0.5s !important;
+      -o-transition: all 0.5s !important;
+      transition: all 0.5s !important;
+    }
+  }
+}
