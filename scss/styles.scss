@@ -22,6 +22,9 @@
   letter-spacing: 1px;
   padding: 20px;
 }
+.logo {
+  padding-left: 6rem;
+}
 
 .icon-text {
   display: flex;
@@ -31,6 +34,7 @@
 
 .nav_link {
   color: #19766c !important;
+  margin-right: 20rem;
 }
 .nav-link:hover {
   color: rgb(134, 188, 112) !important;
@@ -42,6 +46,23 @@
   -o-transition: all 0.5s !important;
   transition: all 0.5s !important;
 }
+// for the images that go in services
+.image-services {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  z-index: 9999;
+}
+.img-services {
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+}
+
 .dropdown-menu {
   @media (min-width: 200px) and (max-width: 600px) {
     width: 100%;

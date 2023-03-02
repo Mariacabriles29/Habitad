@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- our project just needs Font Awesome Solid + Brands -->
+
+    <title>Tu hábitad</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.scss" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="shortcut icon" type="img/favicon.ico" href="img/favicon.ico" />
     <link
       href="./fontawesome-free-6.3.0-web/css/fontawesome.css"
       rel="stylesheet"
@@ -19,25 +25,18 @@
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       type="text/css"
       href="fonts/Akzidenz-Grotesk-BQ-Light-Condensed-Italic_2823.ttf"
     />
-   
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.scss" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap.min.js" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap.js" />
-
-    <link rel="shortcut icon" type="img/favicon.ico" href="img/favicon.ico" />
-
-    <title>Tu hábitad</title>
     <!-- menu start  -->
     <div class="container-with-various-data">
       <div
@@ -49,13 +48,10 @@
         </p>
       </div>
       <div class="row">
-        <nav
-          class="navbar navbar-expand-lg bg-body-tertiary col-12 bg-white"
-          id="menu"
-        >
+        <nav class="navbar navbar-expand-lg navbar-light col-12 bg-white">
           <div class="container-fluid">
             <a class="pl-0 col-2 ml-md-5 mt-md-n2" href="#">
-              <img srcset="img/menu-logo.jpg" class="ml-md-6" />
+              <img class="logo" srcset="img/menu-logo.jpg" class="ml-md-6" />
             </a>
             <button
               class="navbar-toggler"
@@ -70,7 +66,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item ">
+                <li class="nav-item">
                   <a
                     class="nav-link active font-bold quicksand letra-verde"
                     aria-current="page"
@@ -79,7 +75,7 @@
                   >
                 </li>
                 <li class="nav-item ml-md-5">
-                  <a class="nav-link  font-bold quicksand letra-verde" href="#"
+                  <a class="nav-link font-bold quicksand letra-verde" href="#"
                     >Conócenos</a
                   >
                 </li>
@@ -87,68 +83,75 @@
                   <a
                     class="nav-link font-bold quicksand letra-verde"
                     href="#"
+                    id="servicios"
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
+                    >Servicios</a
                   >
-                    Servicios
-                  </a>
-                  <div class="dropdown-menu">
-                    <div class="row">
-                      <div class="col-12 col-md-6 text-center p-3">
-                        <img src="img/item-1.jpg" />
-                      </div>
-                      <div class="col-12 col-md-6 text-center p-3">
-                        <img src="img/item-2.jpg" />
-                      </div>
-                    </div>
-                  </div>
                 </li>
                 <li class="nav-item ml-md-5">
                   <a class="nav-link font-bold quicksand letra-verde" href="#"
                     >FAQ</a
                   >
                 </li>
-                <li class="nav-item ml-md-6">
+                <li class="nav-item ml-md-4">
                   <a class="nav-link font-bold quicksand letra-verde" href="#"
                     >Noticias</a
                   >
                 </li>
-                <li class="nav-item ml-md-6">
+                <li class="nav-item ml-md-4">
                   <a class="nav-link font-bold quicksand letra-verde" href="#"
                     >Contactanos</a
                   >
                 </li>
               </ul>
-             <div class="social-networks ml-md-3 d-none d-xl-block col-lg-2">
-              <a  class="ml-md-2 " href="#" title="Habitad en Facebook" target="_blank">
-                <i class=" fab fa-facebook fa-lg"></i>
-              </a>
- 
-              <a  class="ml-md-2 " href="#" title="Habitad en Instagram" target="_blank">
-                <i class=" fab fa-instagram fa-lg"></i>
-              </a>
-              <a  class="ml-md-2 " href="#" title="Habitad en Youtube" target="_blank">
-                <i class=" fab fa-youtube fa-lg"></i>
-              </a>
- 
+              <div class="social-networks ml-md-3 d-none d-xl-block col-lg-2">
+                <a
+                  class="ml-md-2"
+                  href="#"
+                  title="Habitad en Facebook"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook fa-lg"></i>
+                </a>
 
-             </div>
-             
+                <a
+                  class="ml-md-2"
+                  href="#"
+                  title="Habitad en Instagram"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a
+                  class="ml-md-2"
+                  href="#"
+                  title="Habitad en Youtube"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube fa-lg"></i>
+                </a>
               </div>
             </div>
-            
-
-            
-                  </div>
-                </div>
-              </nav>
-            </div>
+            <!-- div collapse navbar -->
           </div>
+          <!-- div container fluid navbar -->
         </nav>
+        <div class="image-services">
+          <img class="img-services" src="img/item-1.jpg" alt="Service 1" />
+          <img class="img-services" src="img/item-2.jpg" alt="Service 2" />
+        </div>
       </div>
+      <!-- end div class row -->
     </div>
+    <!-- end div container data-->
   </head>
 
-  <body></body>
+  <body>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/item.js"></script>
+  </body>
 </html>
