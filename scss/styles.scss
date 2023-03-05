@@ -58,20 +58,30 @@
 }
 
 // for the images that go in services
-
-.dropdown-menu {
-  @media (min-width: 200px) and (max-width: 600px) {
-    width: 100%;
-  }
-  @media (min-width: 601px) {
-    width: 521px;
-    border-top-style: solid;
-    border-color: rgb(25, 118, 108);
-    border: 5%;
-    top: 123% !important;
-    left: -270px !important;
+.dropdown-menu.show {
+  display: flex !important;
+  margin-left: -11rem !important;
+}
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .dropdown-menu.show {
+    display: flex !important;
+    flex-direction: column;
   }
 }
+
+// .dropdown-menu {
+//   @media (min-width: 200px) and (max-width: 600px) {
+//     width: 100%;
+//   }
+//   @media (min-width: 601px) {
+//     width: 521px;
+//     border-top-style: solid;
+//     border-color: rgb(25, 118, 108);
+//     border: 5%;
+//     top: 123% !important;
+//     left: -270px !important;
+//   }
+// }
 .letra-verde {
   color: #19766c !important;
 }
@@ -94,14 +104,10 @@
       -o-transition: all 0.5s !important;
       transition: all 0.5s !important;
       box-sizing: border-box;
-      vertical-align: middle;
     }
     .fa-facebook:hover {
       color: white;
       background-color: rgb(199, 214, 133);
-      padding: 2px;
-      padding-left: 6px;
-      padding-right: 6px;
       border: 0.09rem solid;
       border-radius: 50%;
       border-color: #fff;
@@ -125,7 +131,7 @@
     .fa-instagram:hover {
       color: white;
       background-color: rgb(199, 214, 133);
-      padding: 3px;
+
       border: 0.09rem solid;
       border-radius: 50%;
     }
@@ -146,14 +152,13 @@
     .fa-youtube:hover {
       color: white;
       background-color: rgb(199, 214, 133);
-      padding: 3%;
       border: 0.09rem solid;
       border-radius: 50%;
     }
   }
 }
 #menu {
-  @media (min-width: 200px) and (max-width: 700px) {
+  @media screen and (min-width: 200px) and (max-width: 700px) {
     height: 64px;
     margin: 0;
     padding: 0;
@@ -165,5 +170,77 @@
   }
   @media (min-width: 701px) {
     height: 64px;
+  }
+}
+// grandparents section
+.head-left-letters {
+  bottom: 0;
+  left: 0;
+  padding: 0 30px;
+  text-align: left;
+  width: 100%;
+}
+
+.letters1 {
+  margin-top: 30%;
+}
+
+.life {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.en-el-lugar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.contacto {
+  background-color: #0c66f5;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.contacto:hover {
+  background-color: #0747a6;
+}
+
+@media (max-width: 991.98px) {
+  .head-left-letters {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .letters1 {
+    margin-top: 50%;
+  }
+
+  .life {
+    font-size: 2rem;
+  }
+
+  .en-el-lugar {
+    font-size: 1.125rem;
+  }
+
+  .contacto {
+    font-size: 0.75rem;
+    padding: 8px 15px;
   }
 }
