@@ -230,9 +230,11 @@
   .letters1 {
     margin-top: 50%;
   }
-
-  .life {
-    font-size: 2rem;
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  .big-tittle {
+    font-size: 4.075rem;
+    line-height: 79px;
+    letter-spacing: 5px;
   }
 
   .en-el-lugar {
