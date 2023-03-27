@@ -17,11 +17,13 @@
 .quicksand {
   font-family: "Quicksand", sans-serif;
 }
+
 .start {
   font-size: 18px;
   letter-spacing: 1px;
   padding: 20px;
 }
+
 .logo {
   padding-left: 6rem;
 }
@@ -36,151 +38,123 @@
   color: #19766c !important;
   margin-right: 20rem;
 }
+
 .nav-link:hover {
   color: rgb(134, 188, 112) !important;
-
   padding-bottom: 0%;
   border-bottom: dotted;
-  -webkit-transition: all 0.5s !important;
-  -moz-transition: all 0.5s !important;
-  -o-transition: all 0.5s !important;
   transition: all 0.5s !important;
 }
 
 .navbar-nav {
   display: flex;
+  width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
 }
+
 .navbar-collapse {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-// for the images that go in services
 .dropdown-menu.show {
   display: flex !important;
   margin-left: -11rem !important;
 }
+
 @media screen and (min-width: 200px) and (max-width: 650px) {
   .dropdown-menu.show {
     display: flex !important;
     flex-direction: column;
   }
 }
-
-// .dropdown-menu {
-//   @media (min-width: 200px) and (max-width: 600px) {
-//     width: 100%;
-//   }
-//   @media (min-width: 601px) {
-//     width: 521px;
-//     border-top-style: solid;
-//     border-color: rgb(25, 118, 108);
-//     border: 5%;
-//     top: 123% !important;
-//     left: -270px !important;
-//   }
-// }
 .letra-verde {
   color: #19766c !important;
 }
-.social-networks {
-  // display: flex;
-  // justify-content: end;
-  a {
-    text-decoration: none;
-    margin-right: 14px;
-    .fa-facebook {
-      color: #19766c;
-      padding: 6%;
-      padding-left: 3%;
-      padding-right: 3%;
 
-      border: 0.09rem solid;
-      border-radius: 100%;
-      -webkit-transition: all 0.5s !important;
-      -moz-transition: all 0.5s !important;
-      -o-transition: all 0.5s !important;
-      transition: all 0.5s !important;
-      box-sizing: border-box;
-    }
-    .fa-facebook:hover {
-      color: white;
-      background-color: rgb(199, 214, 133);
-      border: 0.09rem solid;
-      border-radius: 50%;
-      border-color: #fff;
-      transform: scale(1.2);
-    }
-
-    .fa-instagram {
-      color: #19766c;
-      padding: 6%;
-      padding-left: 3%;
-      padding-right: 3%;
-      border: 0.09rem solid;
-      border-radius: 100%;
-      -webkit-transition: all 0.5s !important;
-      -moz-transition: all 0.5s !important;
-      -o-transition: all 0.5s !important;
-      transition: all 0.5s !important;
-      box-sizing: border-box;
-    }
-
-    .fa-instagram:hover {
-      color: white;
-      background-color: rgb(199, 214, 133);
-
-      border: 0.09rem solid;
-      border-radius: 50%;
-    }
-
-    .fa-youtube {
-      color: #19766c;
-      padding: 6%;
-      padding-left: 3%;
-      padding-right: 3%;
-
-      border: 0.09rem solid;
-      border-radius: 100%;
-      -webkit-transition: all 0.5s !important;
-      -moz-transition: all 0.5s !important;
-      -o-transition: all 0.5s !important;
-      transition: all 0.5s !important;
-    }
-    .fa-youtube:hover {
-      color: white;
-      background-color: rgb(199, 214, 133);
-      border: 0.09rem solid;
-      border-radius: 50%;
-    }
-  }
+.social-networks a {
+  text-decoration: none;
+  margin-right: 14px;
 }
-#menu {
-  @media screen and (min-width: 200px) and (max-width: 700px) {
+.social-networks a .fa-facebook {
+  color: #19766c;
+  padding: 6%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: 0.09rem solid;
+  border-radius: 100%;
+  transition: all 0.5s !important;
+  box-sizing: border-box;
+}
+.social-networks a .fa-facebook:hover {
+  color: white;
+  background-color: rgb(199, 214, 133);
+  border: 0.09rem solid;
+  border-radius: 50%;
+  border-color: #fff;
+  transform: scale(1.2);
+}
+.social-networks a .fa-instagram {
+  color: #19766c;
+  padding: 6%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: 0.09rem solid;
+  border-radius: 100%;
+  transition: all 0.5s !important;
+  box-sizing: border-box;
+}
+.social-networks a .fa-instagram:hover {
+  color: white;
+  background-color: rgb(199, 214, 133);
+  border: 0.09rem solid;
+  border-radius: 50%;
+}
+.social-networks a .fa-youtube {
+  color: #19766c;
+  padding: 6%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: 0.09rem solid;
+  border-radius: 100%;
+  transition: all 0.5s !important;
+}
+.social-networks a .fa-youtube:hover {
+  color: white;
+  background-color: rgb(199, 214, 133);
+  border: 0.09rem solid;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  #menu {
     height: 64px;
     margin: 0;
     padding: 0;
     background-color: white;
-    a {
-      margin-left: 3%;
-      padding: 2%;
-    }
   }
-  @media (min-width: 701px) {
+  #menu a {
+    margin-left: 3%;
+    padding: 2%;
+  }
+}
+@media (min-width: 701px) {
+  #menu {
     height: 64px;
   }
 }
-// grandparents
+
 .content2 {
   height: 600px;
 }
 
 .content3 {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
+
 .head-left-letters {
   bottom: 0;
   left: 0;
@@ -248,12 +222,12 @@
     height: 400px !important;
   }
 }
-
 .big-tittle {
   font-size: 5.05rem;
   line-height: 88px;
   letter-spacing: 5px;
 }
+
 @media screen and (min-width: 200px) and (max-width: 700px) {
   .big-tittle {
     font-size: 4.075rem;
@@ -276,25 +250,20 @@
   }
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  .head-left-letters {
-    .letters1 {
-      position: absolute;
-      top: 3rem;
-      width: 100%;
-      text-align: center;
-    }
+  .head-left-letters .letters1 {
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    text-align: center;
   }
 }
-
 @media screen and (min-width: 701px) and (max-width: 1100px) {
-  .head-left-letters {
-    .letters1 {
-      position: absolute;
-      top: 2rem;
-      width: 100%;
-      left: 10px;
-      text-align: center;
-    }
+  .head-left-letters .letters1 {
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    left: 10px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -308,11 +277,11 @@
 .cont-1 {
   letter-spacing: 2px;
   color: #19766c;
-
   font-family: "quicksand", sans-serif;
   font-size: 3rem;
   margin-top: 1.5rem;
 }
+
 .cont-2 {
   letter-spacing: 3px;
   color: #19766c;
@@ -320,27 +289,23 @@
   font-family: "quicksand", sans-serif;
   font-size: 3rem;
 }
+
 .services {
   position: relative;
   margin-top: -2rem;
 }
 
-.cont-1 {
-  @media (min-width: 200px) and (max-width: 700px) {
+@media (min-width: 200px) and (max-width: 700px) {
+  .cont-1 {
     letter-spacing: 2px;
     color: #19766c;
     font-family: "quicksand", sans-serif;
     box-sizing: border-box;
     font-size: 1.8rem;
   }
-  @media (min-width: 701px) and (max-width: 1100px) {
-    letter-spacing: 2px;
-    color: #19766c;
-    font-family: "quicksand", sans-serif;
-    box-sizing: border-box;
-    font-size: 2.2rem;
-  }
-  @media (min-width: 1101px) {
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .cont-1 {
     letter-spacing: 2px;
     color: #19766c;
     font-family: "quicksand", sans-serif;
@@ -348,22 +313,36 @@
     font-size: 2.2rem;
   }
 }
-.cont-2 {
-  @media (min-width: 200px) and (max-width: 700px) {
+@media (min-width: 1101px) {
+  .cont-1 {
+    letter-spacing: 2px;
+    color: #19766c;
+    font-family: "quicksand", sans-serif;
+    box-sizing: border-box;
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .cont-2 {
     letter-spacing: 1px;
     color: #19766c;
     font-weight: 500;
     font-family: "quicksand", sans-serif;
     font-size: 2rem;
   }
-  @media (min-width: 701px) and (max-width: 1100px) {
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .cont-2 {
     letter-spacing: 3px;
     color: #19766c;
     font-weight: 500;
     font-family: "quicksand", sans-serif;
     font-size: 2rem;
   }
-  @media (min-width: 1101px) {
+}
+@media (min-width: 1101px) {
+  .cont-2 {
     letter-spacing: 5px;
     color: #19766c;
     font-weight: 500;
@@ -372,78 +351,89 @@
   }
 }
 
-//img services
 .vineta1 {
   margin-left: 6rem;
 }
+
 .vineta2 {
   margin-left: 2rem;
 }
-//vertical line
-.line-v {
-  @media (min-width: 200px) and (max-width: 800px) {
+
+@media (min-width: 200px) and (max-width: 800px) {
+  .line-v {
     display: none;
-    border-left: 1px solid #008000c2;
+    border-left: 1px solid rgba(0, 128, 0, 0.7607843137);
     height: 89px;
     margin-left: 18rem;
     margin-top: -8rem;
   }
-  @media (min-width: 801px) {
+}
+@media (min-width: 801px) {
+  .line-v {
     display: inline-block;
-    border-left: 1px solid #008000c2;
+    border-left: 1px solid rgba(0, 128, 0, 0.7607843137);
     height: 95px;
     margin-left: 15rem;
     margin-top: -6rem;
   }
 }
+
 .vl {
   display: inline-block;
-  border-left: 1px solid #008000c2;
+  border-left: 1px solid rgba(0, 128, 0, 0.7607843137);
   height: 96px;
   margin-left: 37rem;
   margin-top: 43rem;
 }
-.vl {
-  @media (min-width: 200px) and (max-width: 800px) {
+
+@media (min-width: 200px) and (max-width: 800px) {
+  .vl {
     display: none;
-    border-left: 1px solid #008000c2;
+    border-left: 1px solid rgba(0, 128, 0, 0.7607843137);
     height: 109px;
     margin-left: 22rem;
     margin-top: 40rem;
   }
-  @media (min-width: 801px) and (max-width: 1100px) {
+}
+@media (min-width: 801px) and (max-width: 1100px) {
+  .vl {
     display: inline-block;
-    border-left: 1px solid #008000c2;
-
+    border-left: 1px solid rgba(0, 128, 0, 0.7607843137);
     height: 109px;
     margin-left: 21rem;
     margin-top: 40rem;
   }
 }
-//sheets
-.sheet-1,
-.sheet-2 {
-  @media (min-width: 200px) and (max-width: 770px) {
+
+@media (min-width: 200px) and (max-width: 770px) {
+  .sheet-1,
+  .sheet-2 {
     position: absolute !important;
     opacity: 0.3;
     width: 50% !important;
   }
-  @media (min-width: 771px) {
+}
+@media (min-width: 771px) {
+  .sheet-1,
+  .sheet-2 {
     position: relative !important;
   }
 }
+
 .green1 {
   position: relative;
   height: 450px;
   width: 100%;
-
   background-color: #c7d684;
 }
-.green1 {
-  @media (min-width: 200px) and (max-width: 701px) {
+
+@media (min-width: 200px) and (max-width: 701px) {
+  .green1 {
     display: none;
   }
-  @media (min-width: 702px) and (max-width: 1100px) {
+}
+@media (min-width: 702px) and (max-width: 1100px) {
+  .green1 {
     position: relative;
     height: 450px;
     width: 346px;
@@ -455,26 +445,22 @@
   position: relative;
   height: 450px;
   width: 100%;
-
   background-color: #c7d684;
 }
-.green3 {
-  @media (min-width: 200px) and (max-width: 701px) {
+
+@media (min-width: 200px) and (max-width: 701px) {
+  .green3 {
     display: none;
   }
-  @media (min-width: 702px) and (max-width: 1100px) {
+}
+@media (min-width: 702px) and (max-width: 1100px) {
+  .green3 {
     position: relative;
     height: 450px;
     width: 346px;
     margin-top: 2rem;
   }
 }
-//   @media (min-width: 1101px) {
-//     position: relative;
-//     height: 450px;
-//     width: 568px;
-//   }
-// }
 
 .green2 {
   position: absolute;
@@ -483,10 +469,10 @@
   top: 100px;
   left: 20%;
   width: 50vw;
-  img {
-    width: 100%;
-    height: 450px;
-  }
+}
+.green2 img {
+  width: 100%;
+  height: 450px;
 }
 
 .green4 {
@@ -496,11 +482,12 @@
   top: 100px;
   right: 20%;
   width: 50vw;
-  img {
-    width: 100%;
-    height: 450px;
-  }
 }
+.green4 img {
+  width: 100%;
+  height: 450px;
+}
+
 .list {
   display: flex;
   justify-content: center;
@@ -509,21 +496,26 @@
   margin-right: -28rem;
   margin-top: -28rem;
 }
-.list {
-  @media (min-width: 200px) and (max-width: 700px) {
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .list {
     display: flex;
     justify-content: center;
     align-content: flex-start;
     margin-top: -12rem;
   }
-  @media (min-width: 701px) and (max-width: 1100px) {
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .list {
     display: flex;
     justify-content: center;
     align-content: flex-start;
     margin-top: -28rem;
     margin-left: 23rem;
   }
-  @media (min-width: 1101px) {
+}
+@media (min-width: 1101px) {
+  .list {
     display: flex;
     justify-content: center;
     align-content: end;
@@ -532,6 +524,7 @@
     margin-top: -28rem;
   }
 }
+
 .list1 {
   display: flex;
   align-content: flex-start;
@@ -541,12 +534,13 @@
   margin-top: -29rem;
   margin-left: 1rem;
 }
-.list1 {
-  @media (min-width: 200px) and (max-width: 700px) {
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .list1 {
     margin-top: 1rem;
   }
 }
-//div que contiene las lineas y el boton conoce mas
+
 .learm-more {
   position: relative;
   border: 2px solid #81b47c;
@@ -557,35 +551,42 @@
   justify-content: center;
   align-items: center;
   border-top: none;
-
   margin-left: 3rem;
 }
 
-.learm-more {
-  @media (min-width: 200px) and (max-width: 350px) {
+@media (min-width: 200px) and (max-width: 350px) {
+  .learm-more {
     position: relative;
     margin: 0 auto;
     margin-top: 180px;
   }
-  @media (min-width: 351px) and (max-width: 499px) {
+}
+@media (min-width: 351px) and (max-width: 499px) {
+  .learm-more {
     position: relative;
     margin: 0 auto;
     margin-top: 230px;
   }
-  @media (min-width: 500px) and (max-width: 700px) {
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  .learm-more {
     position: relative;
     margin: 0 auto;
     margin-top: 5px;
     margin-left: -2rem;
   }
-  @media (min-width: 701px) and (max-width: 1100px) {
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .learm-more {
     position: relative;
     margin: 0 auto;
     margin-left: 2rem;
     width: 74%;
     height: 104px;
   }
-  @media (min-width: 1101px) {
+}
+@media (min-width: 1101px) {
+  .learm-more {
     position: relative;
     margin: 0 auto;
   }
@@ -596,8 +597,9 @@
   top: 0rem;
   left: 0rem;
 }
-.img-grandmothers {
-  @media (min-width: 200px) and (max-width: 700px) {
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .img-grandmothers {
     position: relative;
     top: 5px;
     right: 0;
@@ -607,7 +609,9 @@
     justify-content: center;
     margin-left: -3rem;
   }
-  @media (min-width: 701px) and (max-width: 1100px) {
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .img-grandmothers {
     position: relative;
     display: flex;
     justify-content: center;
@@ -615,7 +619,9 @@
     margin-top: -11px;
     margin-left: -1rem;
   }
-  @media (min-width: 1101px) {
+}
+@media (min-width: 1101px) {
+  .img-grandmothers {
     position: relative;
     top: 0rem;
     left: 0rem;
@@ -636,28 +642,30 @@
   text-transform: uppercase;
   transition: background-color 0.3s ease;
 }
-.learm-more1 {
-  @media (min-width: 701px) and (max-width: 1100px) {
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .learm-more1 {
     margin-top: 100px;
   }
 }
+
 .learm-more1:hover {
   background-color: #19766c;
   color: #ffffff;
   text-decoration: none;
   transition: all 0.3s ease;
 }
-//services one
+
 .services1 {
   margin-left: 0rem;
   line-height: 8px;
   margin-top: 0rem;
 }
+
 .residential {
   font-size: 2.2rem;
   margin-top: 1rem;
 }
-// services two
 
 .title-h2 {
   font-size: 2.5rem;
@@ -666,8 +674,9 @@
   margin-left: 39rem;
   line-height: 40px;
 }
-.title-h2 {
-  @media (min-width: 200px) and (max-width: 700px) {
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .title-h2 {
     font-size: 2.5rem;
     line-height: 40px;
     margin-top: 23rem;
@@ -675,14 +684,16 @@
     line-height: 40px;
   }
 }
+
 .title-h3 {
   font-size: 2.375rem;
   line-height: 25px;
   letter-spacing: 2px;
   margin-left: 39rem;
 }
-.title-h3 {
-  @media (min-width: 200px) and (max-width: 700px) {
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .title-h3 {
     font-size: 2.375rem;
     line-height: 25px;
     letter-spacing: 2px;
@@ -697,14 +708,16 @@
   width: 574px;
   margin-top: 3rem;
   margin-left: 17rem;
-
   background-color: #c7d684;
 }
-.green-1 {
-  @media (min-width: 200px) and (max-width: 701px) {
+
+@media (min-width: 200px) and (max-width: 701px) {
+  .green-1 {
     display: none;
   }
-  @media (min-width: 702px) and (max-width: 1100px) {
+}
+@media (min-width: 702px) and (max-width: 1100px) {
+  .green-1 {
     position: relative;
     height: 450px;
     width: 346px;
@@ -713,24 +726,26 @@
 }
 
 .adjust-margin {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
+
 .text-info2 {
   width: 234px;
   margin-left: 14rem;
   line-height: 18px;
 }
 
-.text-info2 {
-  @media (min-width: 200px) and (max-width: 701px) {
+@media (min-width: 200px) and (max-width: 701px) {
+  .text-info2 {
     text-align: right;
     display: block;
     margin: 0;
   }
 }
 
-.text-info1 {
-  @media (min-width: 701px) and (max-width: 701px) {
+@media (min-width: 701px) and (max-width: 701px) {
+  .text-info1 {
     text-align: right;
     display: block;
     margin: 0;
@@ -745,8 +760,9 @@
   top: -22rem;
   left: 91px;
 }
-.img-grandmothers-1 {
-  @media (min-width: 200px) and (max-width: 700px) {
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .img-grandmothers-1 {
     position: relative;
     top: 5px;
     right: 0;
@@ -756,7 +772,9 @@
     justify-content: center;
     margin-left: -3rem;
   }
-  @media (min-width: 701px) and (max-width: 1100px) {
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .img-grandmothers-1 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -764,7 +782,9 @@
     margin-left: -3rem;
     width: 576px;
   }
-  @media (min-width: 1101px) {
+}
+@media (min-width: 1101px) {
+  .img-grandmothers-1 {
     position: relative;
     top: 11rem;
     left: 3rem;
@@ -781,28 +801,33 @@
   justify-content: center;
   align-items: center;
   border-top: none;
-
   margin-left: 7rem;
 }
 
-.learm-more2 {
-  @media (min-width: 200px) and (max-width: 350px) {
+@media (min-width: 200px) and (max-width: 350px) {
+  .learm-more2 {
     position: relative;
     margin: 0 auto;
     margin-top: 180px;
   }
-  @media (min-width: 351px) and (max-width: 499px) {
+}
+@media (min-width: 351px) and (max-width: 499px) {
+  .learm-more2 {
     position: relative;
     margin: 0 auto;
     margin-top: 230px;
   }
-  @media (min-width: 500px) and (max-width: 700px) {
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  .learm-more2 {
     position: relative;
     margin: 0 auto;
     margin-top: 5px;
     margin-left: -2rem;
   }
-  @media (min-width: 701px) and (max-width: 1100px) {
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .learm-more2 {
     position: relative;
     margin: 0 auto;
     margin-left: 1rem;
@@ -810,7 +835,9 @@
     width: 400px;
     height: 100px;
   }
-  @media (min-width: 1101px) {
+}
+@media (min-width: 1101px) {
+  .learm-more2 {
     position: relative;
     margin: 0 auto;
     top: 175px;
@@ -833,6 +860,7 @@
   text-transform: uppercase;
   transition: background-color 0.3s ease;
 }
+
 .learm-more-button:hover {
   background-color: #19766c;
   color: #ffffff;
@@ -841,7 +869,8 @@
 }
 
 .adjust-sheet2 {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .borde-right-green {
@@ -869,4 +898,4 @@
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-}
+}/*# sourceMappingURL=styles.css.map */
