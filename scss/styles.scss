@@ -175,7 +175,7 @@
 }
 // grandparents
 .content2 {
-  height: 600px;
+  height: max-content;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
   .content2 {
@@ -188,7 +188,7 @@
   }
 }
 .content3 {
-  object-fit: contain;
+  object-fit: fill;
 }
 .head-left-letters {
   bottom: 0;
@@ -417,26 +417,23 @@
     height: 450px;
   }
 }
-// ojo este es el que aun no funciona
-// @media (min-width: 500px) and (max-width: 998px) {
-//   .green1 {
-//     height: auto;
-//     margin-top: 1rem;
-//     width: 100%;
-
-//     .green2 {
-//       width: 100%;
-//       .img-grandmothers {
-//         height: auto;
-//         object-fit: cover;
-//         width: 100%;
-//         margin-left: -8rem;
-//       }
-//     }
-//   }
-// }
-
-@media (min-width: 200px) and (max-width: 701px) {
+.green2 {
+  position: absolute;
+  // width: 100%;
+  height: 100%;
+  top: 100px;
+  left: 20%;
+  width: 50vw;
+  img {
+    width: 100%;
+    height: 450px;
+  }
+  @media (min-width: 200px) and (max-width: 992px) {
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 200px) and (max-width: 992px) {
   .green1 {
     height: auto;
     margin-top: -2rem;
@@ -445,26 +442,11 @@
       .img-grandmothers {
         height: auto;
         object-fit: cover;
-        width: 450px;
-        margin-left: -6rem;
+        width: 100%;
       }
     }
   }
-}
-@media (min-width: 702px) and (max-width: 1100px) {
-  .green1 {
-    height: auto;
-    margin-top: -1rem;
-
-    .green2 {
-      .img-grandmothers {
-        height: auto;
-        object-fit: cover;
-        width: 573px;
-        margin-left: -6rem;
-      }
-    }
-  }
+<<<<<<< HEAD
 }
 
 @media (min-width: 1101px) {
@@ -477,31 +459,35 @@
     img {
       width: 100%;
       height: 450px;
+=======
+
+  @media (min-width: 200px) and (max-width: 992px) {
+    .green3 {
+      height: auto;
+      margin-top: -6rem;
+
+      .green4 {
+        .img-grandmothers-1 {
+          height: auto;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+>>>>>>> 57434ce6bcaada574f8b3918d98ba0b9d9d52e8b
     }
   }
 }
-
 .green3 {
   position: relative;
   height: 450px;
   width: 100%;
 
   background-color: #c7d684;
-}
-
-.green2 {
-  position: absolute;
-  // width: 100%;
-  height: 100%;
-  top: 100px;
-  left: 20%;
-  width: 50vw;
-  img {
+  @media (min-width: 200px) and (max-width: 992px) {
     width: 100%;
-    height: 450px;
+    background: none;
   }
 }
-
 .green4 {
   position: absolute;
   width: 100%;
@@ -509,42 +495,16 @@
   top: 100px;
   right: 30%;
   width: 50vw;
+  @media (min-width: 200px) and (max-width: 992px) {
+    width: 100%;
+    right: 0%;
+  }
   img {
     width: 100%;
     height: 450px;
   }
 }
 
-@media (min-width: 200px) and (max-width: 701px) {
-  .green3 {
-    height: auto;
-    margin-top: -6rem;
-
-    .green4 {
-      .img-grandmothers-1 {
-        height: auto;
-        object-fit: cover;
-        width: 450px;
-        margin-left: -4rem;
-      }
-    }
-  }
-}
-@media (min-width: 702px) and (max-width: 1100px) {
-  .green3 {
-    height: auto;
-    margin-top: -6rem;
-
-    .green4 {
-      .img-grandmothers-1 {
-        height: auto;
-        object-fit: cover;
-        width: 573px;
-        margin-left: 1rem;
-      }
-    }
-  }
-}
 .list {
   display: flex;
   justify-content: center;
@@ -627,8 +587,8 @@
   @media (min-width: 701px) and (max-width: 1100px) {
     position: relative;
     margin: 0 auto;
-    margin-left: -2rem;
-    width: 450px;
+
+    width: 70%;
     height: 80px;
   }
   @media (min-width: 1101px) {
@@ -831,7 +791,7 @@
     margin: 0 auto;
     margin-top: 0px;
     margin-left: -2rem;
-    width: 380px;
+    width: 70%;
     height: 70px;
   }
   @media (min-width: 701px) and (max-width: 1100px) {
@@ -839,7 +799,7 @@
     margin: 0 auto;
     margin-left: 6rem;
     top: 0px;
-    width: 400px;
+    width: 70%;
     height: 80px;
   }
   @media (min-width: 1101px) {
