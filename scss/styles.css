@@ -902,4 +902,55 @@
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
+}
+
+@media (min-width: 578px) and (max-width: 998px) {
+  .center_day {
+    display: flex;
+  }
+}
+.company-information {
+  background-color: #efefef;
+  margin-top: 250px !important;
+}
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .company-information {
+    margin-top: 24rem !important;
+  }
+}
+@media (min-width: 701px) and (max-width: 770px) {
+  .company-information {
+    margin-top: 30rem !important;
+  }
+}
+@media (min-width: 771px) and (max-width: 992px) {
+  .company-information {
+    margin-top: 22rem !important;
+  }
+}
+@media (min-width: 993px) and (max-width: 1100px) {
+  .company-information {
+    margin-top: 22rem !important;
+  }
+}
+.learm-more-button1 {
+  position: absolute;
+  background-color: #81b47c;
+  color: #fff;
+  font-size: 1.375rem;
+  padding: 4px;
+  padding-left: 1.8em;
+  padding-right: 1.8rem;
+  border-radius: 50px;
+  margin-top: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.learm-more-button1:hover {
+  background-color: #19766c;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=styles.css.map */
