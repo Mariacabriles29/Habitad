@@ -459,24 +459,25 @@
     img {
       width: 100%;
       height: 450px;
-=======
-
-  @media (min-width: 200px) and (max-width: 992px) {
-    .green3 {
-      height: auto;
-      margin-top: -6rem;
-
-      .green4 {
-        .img-grandmothers-1 {
-          height: auto;
-          object-fit: cover;
-          width: 100%;
-        }
-      }
->>>>>>> 57434ce6bcaada574f8b3918d98ba0b9d9d52e8b
     }
   }
 }
+
+@media (min-width: 200px) and (max-width: 992px) {
+  .green3 {
+    height: auto;
+    margin-top: -6rem;
+
+    .green4 {
+      .img-grandmothers-1 {
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}
+
 .green3 {
   position: relative;
   height: 450px;
