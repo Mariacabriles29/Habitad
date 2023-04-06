@@ -949,6 +949,58 @@
   margin-top: -1rem;
 }
 
-.gall-img1 {
-  height: 200px;
+.gall1-cont {
+  height: 100%;
+}
+
+.gall1-img {
+  height: 100%;
+}
+
+.gall3-cont {
+  height: 100%;
+}
+
+.gall3-img {
+  height: 100%;
+}
+
+.gall2-cont {
+  height: 100%;
+}
+
+.gall2-img {
+  height: 100%;
+}
+
+.gall4-cont {
+  height: 100%;
+}
+
+.gall4-img {
+  height: 100%;
+}
+
+.gall6-cont {
+  height: 50%;
+}
+
+.gall6-img {
+  height: 100%;
+}
+
+.gall7-cont {
+  height: 50%;
+}
+
+.gall7-img {
+  height: 100%;
+}
+
+.gall5-cont {
+  height: 100%;
+}
+
+.gall5-img {
+  height: 100%;
 }/*# sourceMappingURL=styles.css.map */
