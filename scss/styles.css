@@ -337,7 +337,7 @@
     color: #19766c;
     font-family: "quicksand", sans-serif;
     box-sizing: border-box;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -574,7 +574,7 @@
     position: relative;
     margin: 0 auto;
     margin-top: 0px;
-    margin-left: -3rem;
+    margin-left: 3rem;
     width: 380px;
     height: 80px;
   }
@@ -619,7 +619,7 @@
     position: relative;
     margin: 0 auto;
     margin-top: 0px;
-    margin-left: -4rem;
+    margin-left: 3rem;
     width: 342px;
     height: 70px;
   }
@@ -769,7 +769,7 @@
     position: relative;
     margin: 0 auto;
     margin-top: 0px;
-    margin-left: -2rem;
+    margin-left: 4rem;
     width: 70%;
     height: 70px;
   }
@@ -778,7 +778,7 @@
   .learm-more2 {
     position: relative;
     margin: 0 auto;
-    margin-left: 6rem;
+    margin-left: 4rem;
     top: 0px;
     width: 70%;
     height: 80px;
@@ -943,4 +943,12 @@
   color: #ffffff;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+.adjust-img {
+  margin-top: -1rem;
+}
+
+.gall-img1 {
+  height: 200px;
 }/*# sourceMappingURL=styles.css.map */

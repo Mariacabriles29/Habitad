@@ -359,7 +359,7 @@
     color: #19766c;
     font-family: "quicksand", sans-serif;
     box-sizing: border-box;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 }
 .cont-2 {
@@ -446,7 +446,6 @@
       }
     }
   }
-<<<<<<< HEAD
 }
 
 @media (min-width: 1101px) {
@@ -581,7 +580,7 @@
     position: relative;
     margin: 0 auto;
     margin-top: 0px;
-    margin-left: -3rem;
+    margin-left: 3rem;
     width: 380px;
     height: 80px;
   }
@@ -622,7 +621,7 @@
     position: relative;
     margin: 0 auto;
     margin-top: 0px;
-    margin-left: -4rem;
+    margin-left: 3rem;
     width: 342px;
     height: 70px;
   }
@@ -736,32 +735,6 @@
   top: -22rem;
   left: 91px;
 }
-// .img-grandmothers-1 {
-//   @media (min-width: 200px) and (max-width: 700px) {
-//     position: relative;
-//     top: 5px;
-//     right: 0;
-//     margin-top: 11rem;
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     margin-left: -3rem;
-//   }
-//   @media (min-width: 701px) and (max-width: 1100px) {
-//     position: relative;
-//     display: flex;
-//     justify-content: center;
-//     margin-top: 172px;
-//     margin-left: -3rem;
-//     width: 576px;
-//   }
-//   @media (min-width: 1101px) {
-//     position: relative;
-//     top: 1rem;
-//     left: 3rem;
-//   }
-// }
-
 .learm-more2 {
   position: relative;
   border: 2px solid #81b47c;
@@ -791,14 +764,14 @@
     position: relative;
     margin: 0 auto;
     margin-top: 0px;
-    margin-left: -2rem;
+    margin-left: 4rem;
     width: 70%;
     height: 70px;
   }
   @media (min-width: 701px) and (max-width: 1100px) {
     position: relative;
     margin: 0 auto;
-    margin-left: 6rem;
+    margin-left: 4rem;
     top: 0px;
     width: 70%;
     height: 80px;
@@ -957,4 +930,10 @@
   color: #ffffff;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+.adjust-img {
+  margin-top: -1rem;
+}
+.gall-img1 {
+  height: 200px;
 }
