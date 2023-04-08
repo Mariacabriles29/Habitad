@@ -1068,6 +1068,9 @@
   @media (min-width: 200px) and (max-width: 700px) {
     font-size: 16px;
   }
+    @media (min-width: 701px) and (max-width: 992px) {
+    font-size: 20px;
+  }
 }
 .green-button {
   background-color: #81b47c;
@@ -1077,8 +1080,12 @@
   position: absolute !important;
   left: 10.3125rem;
   bottom: 0;
+  width: max-content!important;
   @media (min-width: 200px) and (max-width: 700px) {
     left: 5.0456rem;
+  }
+  @media (min-width: 701px) and (max-width: 992px) {
+    left:10.0456rem;
   }
 }
 .date {
@@ -1087,4 +1094,98 @@
 .card-group {
   display: flex;
   margin: 0 auto;
+
 }
+.card-group{
+   @media (min-width: 200px) and (max-width: 700px){
+
+    flex-direction: column!important;
+  }
+    @media (min-width: 701px) and (max-width: 992px){
+
+    flex-direction: column!important;
+  }
+}
+.gran-father1{
+  @media (min-width: 200px) and (max-width: 700px){
+    margin-top: 4rem;
+  }
+   @media (min-width: 701px) and (max-width: 800px){
+    margin-top: 4rem;
+  }
+    @media (min-width: 801px) and (max-width: 992px){
+    margin-top: 4rem;
+  }
+}
+.gran-father2{
+  margin-left: 16px!important;
+  margin-right: 16px;
+    @media (min-width: 200px) and (max-width: 700px){
+    margin-top: 14rem;
+     margin-left: 0!important;
+  margin-right: 0;
+  }
+    @media (min-width: 701px) and (max-width: 800px){
+    margin-top: 14rem;
+     margin-left: 0!important;
+  margin-right: 0;
+  }
+    @media (min-width: 801px) and (max-width: 992px){
+    margin-top: 22rem;
+     margin-left: 0!important;
+  margin-right: 0;
+  }
+}
+.gran-father3{
+  @media (min-width: 200px) and (max-width: 700px){
+    margin-top: 12rem;
+  }
+   @media (min-width: 701px) and (max-width: 800px){
+    margin-top: 14rem;
+  }
+    @media (min-width: 801px) and (max-width: 992px){
+    margin-top: 24rem;
+  }
+}
+.see-more{
+  margin-left: -3rem;
+   @media (min-width: 200px) and (max-width: 500px){
+    margin-top: 10rem!important;
+    margin-left: -6rem;
+  }
+   @media (min-width: 501px) and (max-width: 700px){
+    margin-top: 8rem!important;
+    margin-left: -6rem;
+  }
+   @media (min-width: 701px) and (max-width: 800px){
+    margin-top: 12rem!important;
+    margin-left: -6rem;
+  }
+   @media (min-width: 801px) and (max-width: 992px){
+    margin-top: 20rem!important;
+    margin-left: -6rem;
+  }
+}
+.allies-text{
+    font-size: 5.5rem;
+    color: #C7D684;
+    opacity: 0.1;
+    letter-spacing: 2px;
+}
+.position-ab{
+  position: absolute !important;
+    margin-top: 4.5% !important;
+    left: 9.2%;
+    bottom: 25%;
+}
+   @media (min-width: 700px) {
+.line-ver {
+    border-right: 1px solid #d3d3d3;
+    height: 80px;
+    width: 1px;
+    display: inherit !important;
+    position: absolute;
+    right: 50%;
+    margin-top: 4rem;
+}
+   }
