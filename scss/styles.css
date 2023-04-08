@@ -1265,8 +1265,8 @@
 .position-ab {
   position: absolute !important;
   margin-top: 4.5% !important;
-  left: 9.2%;
-  bottom: 25%;
+  left: 8.2%;
+  bottom: 37%;
 }
 
 @media (min-width: 700px) {
@@ -1279,4 +1279,18 @@
     right: 50%;
     margin-top: 4rem;
   }
+}
+.tena {
+  margin-left: -38rem;
+  margin-top: 3rem;
+}
+
+.logo-uni {
+  margin-top: -7rem;
+  margin-left: -4rem;
+}
+
+.more-logo {
+  width: 100% !important;
+  background-color: purple;
 }/*# sourceMappingURL=styles.css.map */
