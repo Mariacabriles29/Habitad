@@ -1209,10 +1209,9 @@
   background-image: (url(../img/contacto.jpg));
   height: 750px;
   background-repeat: no-repeat;
-  background-size: 100%;
-
-  overflow: hidden;
+  background-size: 100% 100%;
 }
+
 .contact-us {
   background-color: #86b96a;
   margin-top: 8rem !important;
@@ -1221,7 +1220,17 @@
   opacity: 0.9;
   // display: flex;
   // align-items: center;
+  @media (min-width: 200px) and (max-width: 700px) {
+    margin-top: 3rem !important;
+    margin-left: 2rem;
+    width: 88% !important;
+  }
+  @media (min-width: 701px) and (max-width: 992px) {
+    margin-left: 2rem;
+    width: 37% !important;
+  }
 }
+
 .doubt {
   color: white;
   font-weight: 100;
@@ -1240,29 +1249,216 @@ input {
 .form-check-input[type="checkbox"] {
   border-radius: 0.25em !important;
 }
+.btn-primary {
+  color: #fff;
+  background-color: white !important;
+  border-color: white !important;
+}
 
 .send {
   background-color: #19766c !important;
-  border-color: white !important;
-  border-radius: 150px !important;
-  width: 120px;
+  padding: 2px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  color: white;
+  border-radius: 50px !important;
+  -webkit-transition: all 0.5s !important;
+  -moz-transition: all 0.5s !important;
+  -o-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+  text-decoration: none;
 }
+
 .send:hover {
-  background-color: #86b96a;
-  color: #ffffff;
+  background-color: #86b96a !important;
+  color: #ffffff !important;
   transition: all 0.3s ease;
 }
 
-input[required]:nth-child(4)::placeholder {
-  color: #86b96a !important;
+input:focus {
+  background-color: rgb(129, 180, 124) !important;
+  color: white !important;
 }
-// input[placeholder*="Obligatorio"]:nth-of-type(2)::placeholder {
-//   color: #86b96a !important;
-// }
-// input[required]:not(:empty)::placeholder {
-//   color: #86b96a !important;
-// }
 
-// input[required]:nth-of-type(2)::placeholder {
-//   color: green;
+input::-webkit-input-placeholder {
+  color: white;
+}
+input:focus::-webkit-input-placeholder {
+  color: white;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+  color: white;
+}
+input:focus:-moz-placeholder {
+  color: white;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+  color: white;
+}
+input:focus::-moz-placeholder {
+  color: white;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+  color: white;
+}
+input:focus:-ms-input-placeholder {
+  color: white;
+}
+textarea {
+  border-radius: 15px !important;
+}
+textarea:focus {
+  background-color: rgb(129, 180, 124) !important;
+  color: white !important;
+}
+textarea:focus {
+  background-color: rgb(129, 180, 124) !important;
+  color: white !important;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: white;
+}
+
+/* Firefox < 19 */
+textarea:-moz-placeholder {
+  color: white;
+}
+textarea:focus:-moz-placeholder {
+  color: white;
+}
+
+/* Firefox > 19 */
+textarea::-moz-placeholder {
+  color: white;
+}
+textarea:focus::-moz-placeholder {
+  color: white;
+}
+
+/* Internet Explorer 10 */
+textarea:-ms-input-placeholder {
+  color: white;
+}
+textarea:focus:-ms-input-placeholder {
+  color: white;
+}
+
+input[required] + label {
+  color: gray;
+  position: absolute;
+  top: 5px; /* the negative of the input width */
+  left: 30px;
+  @media (min-width: 200px) and (max-width: 499px) {
+    color: gray;
+    position: absolute;
+    top: 9px; /* the negative of the input width */
+    left: 30px;
+    font-size: 0.7rem;
+  }
+}
+
+input[required] + label:after {
+  content: "(Obligatorio*)";
+  font-size: 0.8rem;
+  color: rgb(217, 226, 169);
+}
+
+/* show the placeholder when input has no content (no content = invalid) */
+input[required]:invalid + label {
+  display: inline-block;
+}
+
+/* hide the placeholder when input has some text typed in */
+input[required]:valid + label {
+  display: none;
+}
+
+input[required]:valid + label:hover {
+  color: white;
+  position: absolute;
+  top: 5px; /* the negative of the input width */
+  left: 30px;
+}
+.form-group.col-md-12.w-100 {
+  position: relative;
+}
+
+// redes-sociales-1{
+
+// 	a{
+
+// 		 .fa-facebook-f{
+
+//                 color: rgb(25,118,108);//#3b5998;
+//                 padding: 2%;
+//                 padding-left: 3%;
+//                 padding-right: 3%;
+
+//                 border: .09rem  solid;
+//                 border-radius: 100%;
+//                 webkit-transition: all 0.5s !important;
+// 				-moz-transition: all 0.5s !important;
+// 				-o-transition: all 0.5s !important;
+// 				transition: all 0.5s !important;
+// 	      }
+// 		 .fa-facebook-f:hover{
+// 	            color: white;
+// 	            background-color: rgb(25,118,108) !important;
+// 	            padding: 2%;
+//                 padding-left: 3%;
+//                 padding-right: 3%;
+// 	            border: .09rem  solid;
+// 	            border-radius: 50%;
+
+// 	      }
+// 	      .fa-instagram{
+
+//                 color: rgb(25,118,108);//#3b5998;
+//                 padding: 2%;
+//                 border: .09rem solid;
+//                 border-radius: 50%;
+//                 webkit-transition: all 0.5s !important;
+// 				-moz-transition: all 0.5s !important;
+// 				-o-transition: all 0.5s !important;
+// 				transition: all 0.5s !important;
+// 	      }
+// 		 .fa-instagram:hover{
+// 	            color: white;
+// 	            background-color: rgb(25,118,108) !important;
+// 	            padding: 2%;
+
+// 	            border:.09rem solid;
+// 	            border-radius: 50%;
+
+// 	      }
+// 	      .fa-youtube{
+
+//                 color: rgb(25,118,108);//#3b5998;
+//                 padding: 2%;
+
+//                 border: .09rem  solid;
+//                 border-radius: 50%;
+//                 webkit-transition: all 0.5s !important;
+// 				-moz-transition: all 0.5s !important;
+// 				-o-transition: all 0.5s !important;
+// 				transition: all 0.5s !important;
+// 	      }
+// 		 .fa-youtube:hover{
+// 	            color: white;
+// 	            background-color: rgb(25,118,108) !important;
+// 	            padding: 2%;
+
+// 	            border: .09rem  solid;
+// 	            border-color: white;
+// 	            border-radius: 50%;
+
+// 	      }
+// 	}
 // }
